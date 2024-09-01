@@ -17,6 +17,8 @@ public class App
         try {
 			Customer customer=mapper.readValue(new File("data/sample-full.json"), Customer.class);
 			System.out.println(customer);
+			Customer customer2=mapper.readValue(new File("data/sample-lite.json"), Customer.class);
+			System.out.println(customer2);
 		} catch (StreamReadException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

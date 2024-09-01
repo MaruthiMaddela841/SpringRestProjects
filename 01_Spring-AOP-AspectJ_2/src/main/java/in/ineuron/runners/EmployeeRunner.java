@@ -14,7 +14,7 @@ public class EmployeeRunner implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		dao.saveEmployee();
+		int saveEmployee = dao.saveEmployee();
 	}
 
 }
