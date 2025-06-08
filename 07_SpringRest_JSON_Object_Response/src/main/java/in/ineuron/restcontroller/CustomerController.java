@@ -38,7 +38,7 @@ public class CustomerController {
 		ResponseEntity<Customer> entity = new ResponseEntity<Customer>(customer,HttpStatus.OK);
 		return entity;
 	}
-	@PostMapping(value="/save",consumes="application/xml")
+	@PostMapping(value="/save",consumes="application/json")
 	public ResponseEntity<String> saveCustomers(@RequestBody Customer customer){
 		System.out.println(customer);
 		Integer id=10;

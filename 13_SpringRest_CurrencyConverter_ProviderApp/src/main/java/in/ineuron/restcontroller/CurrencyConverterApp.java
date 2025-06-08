@@ -25,8 +25,9 @@ public class CurrencyConverterApp {
 		response.setCurrencyFrom(from);
 		response.setCurrencyTo(to);
 		response.setCurrencyValue(82);
-		CurrencyResponseApp invokeRestApiSync = service.invokeRestApiSync(from, to);
-		return new ResponseEntity<CurrencyResponseApp>(invokeRestApiSync,HttpStatus.OK);
+		//CurrencyResponseApp invokeRestApiSync = service.invokeRestApiSync(from, to);
+		//service.invokeRestApiASync(from, to);
+		return new ResponseEntity<CurrencyResponseApp>(response,HttpStatus.OK);
 	}
 
 }

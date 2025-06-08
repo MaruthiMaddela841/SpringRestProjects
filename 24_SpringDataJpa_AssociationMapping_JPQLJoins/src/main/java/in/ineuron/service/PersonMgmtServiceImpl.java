@@ -21,7 +21,7 @@ public class PersonMgmtServiceImpl implements IPersonMgmtService {
 	@Override
 	public List<Object[]> fetchDayaByJoinsUsingParent() {
 		
-		return personRepo.fetchDayaByJoinsUsingParent();
+		return personRepo.fetchDataByJoinsUsingParent();
 	}
 
 

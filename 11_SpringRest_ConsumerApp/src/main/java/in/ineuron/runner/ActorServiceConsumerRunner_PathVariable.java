@@ -13,7 +13,7 @@ public class ActorServiceConsumerRunner_PathVariable implements CommandLineRunne
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("ActorServiceConsumerRunner.run()");
+		System.out.println("ActorServiceConsumerRunner_PathVariable.run()");
 		RestTemplate template = new RestTemplate();
 		String serviceURL="http://localhost:8080/10_SpringRest_ProviderApp/api/actor/wish/{id}/{name}";
 		Map<String,Object> map=new HashMap<String,Object>();

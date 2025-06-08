@@ -28,7 +28,7 @@ public class App
     }
     
     public static Product getObjectData(Product product) {
-    	product.setPid(10);
+    	product.setPid(11);
     	product.setPname("Fan");
     	product.setPrice(3000.5);
     	product.setTypes(new String[]{"ceiling","wall"});

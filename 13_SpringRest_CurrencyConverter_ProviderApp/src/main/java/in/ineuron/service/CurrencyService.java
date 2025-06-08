@@ -11,6 +11,7 @@ public class CurrencyService {
 private static final String REST_END_POINT = "http://localhost:8080/13_SpringRest_CurrencyConverterApp/api/currency/getCurrencyExchangeCost/from/USD/to/INR";
 
 	public CurrencyResponseApp invokeRestApiSync(String from, String to) {
+		System.out.println("CurrencyService.invokeRestApiSync()");
 // Sending Synchronous request
 		WebClient webClient = WebClient.create();
 		System.out.println("***Synchronous: Rescall started ******");
@@ -31,6 +32,7 @@ private static final String REST_END_POINT = "http://localhost:8080/13_SpringRes
 	}
 
 	public static void myResponse(CurrencyResponseApp response) {
+		System.out.println("CurrencyService.myResponse()");
 		System.out.println(response);
 		//use repsonse object as per the needs[push to Apache-kafka]
 	}

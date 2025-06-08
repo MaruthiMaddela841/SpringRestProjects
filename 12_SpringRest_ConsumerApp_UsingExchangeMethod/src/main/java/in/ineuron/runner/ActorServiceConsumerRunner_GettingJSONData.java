@@ -22,7 +22,6 @@ public class ActorServiceConsumerRunner_GettingJSONData implements CommandLineRu
 		System.out.println("ActorServiceConsumerRunner_GettingJSONData.run()-->exchange()");
 		RestTemplate template = new RestTemplate();
 		String serviceURL="http://localhost:8080/10_SpringRest_ProviderApp/api/actor/find/{id}";
-		
 		ResponseEntity<Actor> responseEntity = template.exchange(serviceURL,HttpMethod.GET,null,Actor.class,7);
 		System.out.println("Response Body::"+responseEntity.getBody());
 		System.out.println("Response Status Code Name::"+responseEntity.getStatusCode().toString());

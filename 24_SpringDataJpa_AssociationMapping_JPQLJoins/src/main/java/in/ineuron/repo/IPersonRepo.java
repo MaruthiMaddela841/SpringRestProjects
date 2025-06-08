@@ -9,5 +9,5 @@ import in.ineuron.model.Person;
 
 public interface IPersonRepo extends JpaRepository<Person, Integer> {
 	@Query("select p.pid,p.pname,p.paddress,ph.regNo,ph.phoneNo,ph.provider,ph.type from Person p inner join p.contactDetails ph")
-	public List<Object[]> fetchDayaByJoinsUsingParent();
+	public List<Object[]> fetchDataByJoinsUsingParent();
 }

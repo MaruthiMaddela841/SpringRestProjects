@@ -25,6 +25,7 @@ import lombok.ToString;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 @Table(name="OTM_PERSON")
 public class Person {
 	

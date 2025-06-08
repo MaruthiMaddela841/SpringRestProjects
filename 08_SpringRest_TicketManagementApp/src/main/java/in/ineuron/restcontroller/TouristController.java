@@ -28,6 +28,7 @@ public class TouristController {
 	@PostMapping("/register")
 	public ResponseEntity<String> enrollTourist(@RequestBody Tourist tourist){
 		try {
+			//int a=3/0;
 			String resultMsg=service.registerTourist(tourist);
 			return new ResponseEntity<String>(resultMsg,HttpStatus.OK);
 		}

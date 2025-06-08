@@ -20,12 +20,14 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Setter
 @Getter
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 @Table(name="OTM_PHONE_NUMBER")
 public class PhoneNumber {
 

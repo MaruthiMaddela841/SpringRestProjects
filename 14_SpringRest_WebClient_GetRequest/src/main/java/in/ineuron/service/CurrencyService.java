@@ -8,7 +8,7 @@ import in.ineuron.response.CurrencyResponseApp;
 
 @Service("service")
 public class CurrencyService {
-	private static final String REST_END_POINT = "http://localhost:8080/13_SpringRest_CurrencyConverter_ProviderApp/api/currency/getCurrencyExchangeCost/from/{from}/to/{to}";
+	private static final String REST_END_POINT = "http://localhost:8080/13_SpringRest_CurrencyConverterApp/api/currency/getCurrencyExchangeCost/from/USD/to/IND";
 
 	public void invokeRestApiSync(String from,String to) {
 		//Sending Synchronous Request

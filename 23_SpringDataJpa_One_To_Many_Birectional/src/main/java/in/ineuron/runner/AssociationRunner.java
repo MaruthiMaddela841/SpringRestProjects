@@ -43,23 +43,22 @@ public class AssociationRunner implements CommandLineRunner {
 //		System.out.println(service.savePerson(person));
 		
 		//Load operation from Parent to Child[1 to Many]
-//		service.fetchByPerson().forEach(person->{
-//			System.out.println("Parent::"+person);
-//			Set<PhoneNumber> childs = person.getContactDetails();
-//			childs.forEach(contact->{
-//				System.out.println("Child::"+contact);
-//			});
-//		});
-//		System.out.println();
+		service.fetchByPerson().forEach(person->{
+			System.out.println("Parent::"+person);
+			Set<PhoneNumber> childs = person.getContactDetails();
+			childs.forEach(contact->{
+				System.out.println("Child::"+contact);
+			});
+		});
+		System.out.println();
 //		//Load operation from Child to Parent[Many to 1]
-//		service.fetchByPhoneNumber().forEach(phone->{
-//			System.out.println("Phone::"+phone);
-//			Person person=phone.getPerson();
-//			System.out.println(person);
-//		});
-		
-//		System.out.println(service.deleteByPerson(2));
-//		System.out.println(service.deleteAllPhoneNumbersOfAPerson(3));
+		service.fetchByPhoneNumber().forEach(phone->{
+			System.out.println("Phone::"+phone);
+			Person person=phone.getPerson();
+			System.out.println(person);
+		});
+		System.out.println(service.deleteByPerson(8));
+		System.out.println(service.deleteAllPhoneNumbersOfAPerson(3));
 		
 	}
 
